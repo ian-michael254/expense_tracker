@@ -1,9 +1,18 @@
+import type { ReactNode } from "react";
 
-
-const Card = () => {
-  return (
-    <div>Card</div>
-  )
+interface CardProps {
+  children: ReactNode;
+  className?: string;
 }
 
-export default Card
+const Card = ({ children, className = "" }: CardProps) => {
+  return (
+    <div
+      className={`rounded-xl border border-gray-200 bg-white p-5 shadow-sm ${className}`}
+    >
+      {children}
+    </div>
+  );
+};
+
+export default Card;
