@@ -1,12 +1,14 @@
-import SideBar from "./components/layout/SideBar"
+import Shell from "./components/layout/Shell"
+
+
 
 
 const App = () => {
   return (
     <div className='min-h-screen bg-gray-50'>
-      <div className='flex'>
-        <SideBar />
-      </div>
+     
+      <Shell />
+     
     </div>
   )
 }
